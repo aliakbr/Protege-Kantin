@@ -6,28 +6,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Timur"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Selatan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DomainThings"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MakananUtama"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Snack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Action"/>
+        <NamedIndividual IRI="#Daging"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MakananPenutup"/>
@@ -36,19 +25,58 @@
         <Class IRI="#Utara"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Barat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Makanan"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#AsalMakanan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Minuman"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MakananKaloriTinggi"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#KaloriTinggi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kantin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BahanMakanan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBahan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Selatan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainThings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NasiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Makanan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBahan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKalori"/>
     </Declaration>
     <Declaration>
         <Class IRI="#KaloriRendah"/>
@@ -60,7 +88,10 @@
         <Class IRI="#Duduk"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Kantin"/>
+        <Class IRI="#MakananKaloriRendah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Seledri"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Softdrink"/>
@@ -68,12 +99,55 @@
     <Declaration>
         <Class IRI="#Produk"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="#Jus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BahanMakanan"/>
-    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#KaloriRendah"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BahanMakanan"/>
+            <ObjectComplementOf>
+                <Class IRI="#KaloriTinggi"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KaloriTinggi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BahanMakanan"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasKalori"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MakananKaloriRendah"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Makanan"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasBahan"/>
+                    <Class IRI="#KaloriTinggi"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBahan"/>
+                <Class IRI="#KaloriRendah"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MakananKaloriTinggi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Makanan"/>
+            <ObjectComplementOf>
+                <Class IRI="#MakananKaloriRendah"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AsalMakanan"/>
         <Class IRI="#DomainThings"/>
@@ -93,14 +167,6 @@
     <SubClassOf>
         <Class IRI="#Jus"/>
         <Class IRI="#Minuman"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#KaloriRendah"/>
-        <Class IRI="#BahanMakanan"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#KaloriTinggi"/>
-        <Class IRI="#BahanMakanan"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kantin"/>
@@ -150,6 +216,72 @@
         <Class IRI="#Utara"/>
         <Class IRI="#Kantin"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#MakananKaloriRendah"/>
+        <Class IRI="#MakananKaloriTinggi"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#BahanMakanan"/>
+        <NamedIndividual IRI="#Daging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MakananUtama"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BahanMakanan"/>
+        <NamedIndividual IRI="#Seledri"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Daging"/>
+        <NamedIndividual IRI="#Seledri"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBahan"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
+        <NamedIndividual IRI="#Daging"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#Daging"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#Seledri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBahan"/>
+        <ObjectProperty IRI="#isBahan"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBahan"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBahan"/>
+        <Class IRI="#BahanMakanan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBahan"/>
+        <Class IRI="#BahanMakanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBahan"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasKalori"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKalori"/>
+        <Class IRI="#BahanMakanan"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKalori"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
 </Ontology>
 
 
