@@ -29,25 +29,13 @@
         <Class IRI="#ProdukMurah"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#NasiGoreng"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Jus"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JusAlpukat"/>
+        <Class IRI="#Action"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Kantin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Action"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KKP"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SeledriGoreng"/>
+        <Class IRI="#Jus"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasNama"/>
@@ -68,73 +56,28 @@
         <Class IRI="#Produk"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BahanKaloriTinggi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ayam"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bahan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Steak"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KantinSalman"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NasiAyam"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ProdukMahal"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasKalori"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Membeli"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JusApel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EsKrim"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasPrice"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Daging"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KantinGKUBarat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EastCorner"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MakananUtama"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Seledri"/>
+        <NamedIndividual IRI="#Tes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isBahan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Pizza"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#KantinUtara"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BahanKaloriRendah"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Minuman"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KantinSaraga"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MakananPenutup"/>
@@ -146,145 +89,11 @@
         <Class IRI="#KantinBarat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#JusMangga"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DomainThings"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Duduk"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Snack"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#BahanKaloriRendah"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Bahan"/>
-            <ObjectComplementOf>
-                <Class IRI="#BahanKaloriTinggi"/>
-            </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#BahanKaloriTinggi"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Bahan"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasKalori"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ProdukKaloriRendah"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Makanan"/>
-            <Class IRI="#Produk"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasKalori"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1100</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ProdukKaloriRendah"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Minuman"/>
-            <Class IRI="#Produk"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasKalori"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ProdukKaloriRendah"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Produk"/>
-            <ObjectIntersectionOf>
-                <ObjectComplementOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasBahan"/>
-                        <Class IRI="#BahanKaloriTinggi"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectComplementOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasBahan"/>
-                    <Class IRI="#BahanKaloriRendah"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ProdukKaloriTinggi"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Produk"/>
-            <ObjectComplementOf>
-                <Class IRI="#ProdukKaloriRendah"/>
-            </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ProdukMahal"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Produk"/>
-            <ObjectComplementOf>
-                <Class IRI="#ProdukMurah"/>
-            </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ProdukMurah"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Produk"/>
-            <ObjectUnionOf>
-                <ObjectIntersectionOf>
-                    <Class IRI="#Makanan"/>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#hasPrice"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:integer"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30000</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                </ObjectIntersectionOf>
-                <ObjectIntersectionOf>
-                    <Class IRI="#Minuman"/>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#hasPrice"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:integer"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12000</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectUnionOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Bahan"/>
-        <Class IRI="#DomainThings"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Jus"/>
         <Class IRI="#Minuman"/>
@@ -328,6 +137,22 @@
     <SubClassOf>
         <Class IRI="#Produk"/>
         <Class IRI="#DomainThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProdukKaloriRendah"/>
+        <Class IRI="#Produk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProdukKaloriTinggi"/>
+        <Class IRI="#Produk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProdukMahal"/>
+        <Class IRI="#Produk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProdukMurah"/>
+        <Class IRI="#Produk"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Snack"/>
@@ -338,262 +163,23 @@
         <Class IRI="#Minuman"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Bahan"/>
-        <Class IRI="#Kantin"/>
-        <Class IRI="#Produk"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#MakananUtama"/>
         <Class IRI="#Snack"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#ProdukKaloriRendah"/>
         <Class IRI="#ProdukKaloriTinggi"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#ProdukMahal"/>
         <Class IRI="#ProdukMurah"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Bahan"/>
-        <NamedIndividual IRI="#Ayam"/>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Tes"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bahan"/>
-        <NamedIndividual IRI="#Daging"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#Duduk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#KantinTimur"/>
-        <NamedIndividual IRI="#EastCorner"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MakananPenutup"/>
-        <NamedIndividual IRI="#EsKrim"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Jus"/>
-        <NamedIndividual IRI="#JusAlpukat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Jus"/>
-        <NamedIndividual IRI="#JusApel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Jus"/>
-        <NamedIndividual IRI="#JusMangga"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#KantinSelatan"/>
-        <NamedIndividual IRI="#KKP"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#KantinBarat"/>
-        <NamedIndividual IRI="#KantinGKUBarat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#KantinSelatan"/>
-        <NamedIndividual IRI="#KantinSalman"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#KantinUtara"/>
-        <NamedIndividual IRI="#KantinSaraga"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#Membeli"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MakananUtama"/>
-        <NamedIndividual IRI="#NasiAyam"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MakananUtama"/>
-        <NamedIndividual IRI="#NasiGoreng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MakananUtama"/>
-        <NamedIndividual IRI="#Pizza"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bahan"/>
-        <NamedIndividual IRI="#Seledri"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Snack"/>
-        <NamedIndividual IRI="#SeledriGoreng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MakananUtama"/>
-        <NamedIndividual IRI="#Steak"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#EastCorner"/>
-        <NamedIndividual IRI="#NasiGoreng"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#EastCorner"/>
-        <NamedIndividual IRI="#Steak"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDijual"/>
-        <NamedIndividual IRI="#EsKrim"/>
-        <NamedIndividual IRI="#EastCorner"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDijual"/>
-        <NamedIndividual IRI="#JusAlpukat"/>
-        <NamedIndividual IRI="#KantinGKUBarat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDijual"/>
-        <NamedIndividual IRI="#JusApel"/>
-        <NamedIndividual IRI="#KantinSaraga"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDijual"/>
-        <NamedIndividual IRI="#JusMangga"/>
-        <NamedIndividual IRI="#KantinSalman"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#KKP"/>
-        <NamedIndividual IRI="#NasiAyam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#KantinGKUBarat"/>
-        <NamedIndividual IRI="#NasiGoreng"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#KantinSalman"/>
-        <NamedIndividual IRI="#NasiAyam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#KantinSaraga"/>
-        <NamedIndividual IRI="#SeledriGoreng"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isMenjual"/>
-        <NamedIndividual IRI="#KantinSaraga"/>
-        <NamedIndividual IRI="#Steak"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasBahan"/>
-        <NamedIndividual IRI="#NasiAyam"/>
-        <NamedIndividual IRI="#Ayam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasBahan"/>
-        <NamedIndividual IRI="#NasiGoreng"/>
-        <NamedIndividual IRI="#Daging"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDijual"/>
-        <NamedIndividual IRI="#Pizza"/>
-        <NamedIndividual IRI="#EastCorner"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasBahan"/>
-        <NamedIndividual IRI="#SeledriGoreng"/>
-        <NamedIndividual IRI="#Seledri"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasBahan"/>
-        <NamedIndividual IRI="#Steak"/>
-        <NamedIndividual IRI="#Daging"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#Ayam"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#Daging"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#EsKrim"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1100</Literal>
-    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#EsKrim"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#JusAlpukat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">800</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#JusAlpukat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#JusApel"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#JusApel"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#JusMangga"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#JusMangga"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#NasiAyam"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#NasiGoreng"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#Pizza"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#Pizza"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasKalori"/>
-        <NamedIndividual IRI="#Seledri"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#SeledriGoreng"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#Steak"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70000</Literal>
+        <NamedIndividual IRI="#Tes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isDijual"/>
@@ -622,10 +208,6 @@
         <Class IRI="#Makanan"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isBahan"/>
-        <Class IRI="#Bahan"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDijual"/>
         <Class IRI="#Produk"/>
     </ObjectPropertyDomain>
@@ -633,10 +215,6 @@
         <ObjectProperty IRI="#isMenjual"/>
         <Class IRI="#Kantin"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBahan"/>
-        <Class IRI="#Bahan"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isBahan"/>
         <Class IRI="#Makanan"/>
@@ -655,13 +233,15 @@
         <ObjectProperty IRI="#isDijual"/>
         <ObjectProperty IRI="#isMenjual"/>
     </DisjointObjectProperties>
-    <DataPropertyDomain>
+    <FunctionalDataProperty>
         <DataProperty IRI="#hasKalori"/>
-        <ObjectUnionOf>
-            <Class IRI="#Bahan"/>
-            <Class IRI="#Produk"/>
-        </ObjectUnionOf>
-    </DataPropertyDomain>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasNama"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPrice"/>
+    </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPrice"/>
         <Class IRI="#Produk"/>

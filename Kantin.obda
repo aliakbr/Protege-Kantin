@@ -27,5 +27,37 @@ source		select * from kantin_has_minuman
 mappingId	MAPID-5c1c8a2150ca4f459057c0beb5d7068c
 target		:Makanan-{idmakanan} a :Makanan ; :hasNama {nama} ; :hasKalori {kalori} ; :hasPrice {harga} . 
 source		select idmakanan, nama, kalori, harga from makanan
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1
+target		:Makanan-{idmakanan} a :ProdukKaloriRendah . 
+source		select idmakanan from makanan where kalori < 1000
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(0)
+target		:Makanan-{idmakanan} a :ProdukKaloriTinggi . 
+source		select idmakanan from makanan where kalori >= 1000
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(1)
+target		:Minuman-{idminuman} a :ProdukKaloriRendah . 
+source		select idminuman from minuman where kalori < 500
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(1)(0)
+target		:Minuman-{idminuman} a :ProdukKaloriTinggi . 
+source		select idminuman from minuman where kalori >= 500
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(2)
+target		:Makanan-{idmakanan} a :ProdukMurah . 
+source		select idmakanan from makanan where harga < 30000
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(1)(1)
+target		:Minuman-{idminuman} a :ProdukMurah . 
+source		select idminuman from minuman where harga < 15000
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(2)(0)
+target		:Makanan-{idmakanan} a :ProdukMahal . 
+source		select idmakanan from makanan where harga >= 30000
+
+mappingId	MAPID-6101c061c70640dc920d14debb03aad1(1)(1)(0)
+target		:Minuman-{idminuman} a :ProdukMahal . 
+source		select idminuman from minuman where harga >= 15000
 ]]
 
