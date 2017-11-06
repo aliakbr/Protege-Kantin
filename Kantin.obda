@@ -1,0 +1,31 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/rplsdragon/ontologies/2017/10/kantin-ontology#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-0a708bc40e2f4337a34b04165ca4f4fb
+target		:Kantin-{idkantin} a :Kantin{posisi} ; :hasNama {nama} . 
+source		select idkantin, nama, posisi from kantin
+
+mappingId	MAPID-ece34d425a814bf78bbdce4a0a968d43
+target		:Minuman-{idminuman} a :Minuman ; :hasNama {nama} ; :hasKalori {kalori} ; :hasPrice {harga} . 
+source		select * from minuman
+
+mappingId	MAPID-eccacfd2ed2b41538d8ce0a28ca667c0
+target		:Kantin-{kantin_idkantin} :isMenjual :Makanan-{makanan_idmakanan} . 
+source		select * from kantin_has_makanan
+
+mappingId	MAPID-1cac17596b014cef8aa170fd8a8532b7
+target		:Kantin-{kantin_idkantin} :isMenjual :Minuman-{minuman_idminuman} . 
+source		select * from kantin_has_minuman
+
+mappingId	MAPID-5c1c8a2150ca4f459057c0beb5d7068c
+target		:Makanan-{idmakanan} a :Makanan ; :hasNama {nama} ; :hasKalori {kalori} ; :hasPrice {harga} . 
+source		select idmakanan, nama, kalori, harga from makanan
+]]
+

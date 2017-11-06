@@ -6,168 +6,172 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/rplsdragon/ontologies/2017/10/kantin-ontology">
-    <Prefix name="" IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/rplsdragon/ontologies/2017/10/kantin-ontology#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusMangga"/>
+        <Class IRI="#KantinSelatan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSalman"/>
+        <ObjectProperty IRI="#hasBahan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
+        <ObjectProperty IRI="#isMenjual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Membeli"/>
+        <Class IRI="#Makanan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EastCorner"/>
+        <Class IRI="#ProdukMurah"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusApel"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Daging"/>
+        <Class IRI="#Jus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananPenutup"/>
+        <NamedIndividual IRI="#JusAlpukat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Utara"/>
+        <Class IRI="#Kantin"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinGKUBarat"/>
+        <Class IRI="#Action"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriTinggi"/>
+        <NamedIndividual IRI="#KKP"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
+        <NamedIndividual IRI="#SeledriGoreng"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSaraga"/>
+        <DataProperty IRI="#hasNama"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Minuman"/>
+        <Class IRI="#KantinTimur"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Pizza"/>
+        <ObjectProperty IRI="#isDijual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Duduk"/>
+        <Class IRI="#Softdrink"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriRendah"/>
+        <Class IRI="#ProdukKaloriTinggi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <Class IRI="#Produk"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Jus"/>
+        <Class IRI="#BahanKaloriTinggi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMurah"/>
+        <NamedIndividual IRI="#Ayam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Timur"/>
+        <Class IRI="#Bahan"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
+        <NamedIndividual IRI="#Steak"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Selatan"/>
+        <NamedIndividual IRI="#KantinSalman"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiAyam"/>
+        <NamedIndividual IRI="#NasiAyam"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
+        <Class IRI="#ProdukMahal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusAlpukat"/>
+        <DataProperty IRI="#hasKalori"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#DomainThings"/>
+        <NamedIndividual IRI="#Membeli"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Snack"/>
+        <NamedIndividual IRI="#JusApel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Action"/>
+        <NamedIndividual IRI="#EsKrim"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiGoreng"/>
+        <DataProperty IRI="#hasPrice"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KKP"/>
+        <NamedIndividual IRI="#Daging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Barat"/>
+        <NamedIndividual IRI="#KantinGKUBarat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriRendah"/>
+        <NamedIndividual IRI="#EastCorner"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+        <Class IRI="#MakananUtama"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
+        <NamedIndividual IRI="#Seledri"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
+        <ObjectProperty IRI="#isBahan"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isBahan"/>
+        <NamedIndividual IRI="#Pizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMahal"/>
+        <Class IRI="#KantinUtara"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#SeledriGoreng"/>
+        <Class IRI="#BahanKaloriRendah"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
+        <Class IRI="#Minuman"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Seledri"/>
+        <NamedIndividual IRI="#KantinSaraga"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Steak"/>
+        <Class IRI="#MakananPenutup"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Softdrink"/>
+        <Class IRI="#ProdukKaloriRendah"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <Class IRI="#KantinBarat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriTinggi"/>
+        <NamedIndividual IRI="#JusMangga"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EsKrim"/>
+        <Class IRI="#DomainThings"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Ayam"/>
+        <NamedIndividual IRI="#Duduk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snack"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriRendah"/>
+        <Class IRI="#BahanKaloriRendah"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
+            <Class IRI="#Bahan"/>
             <ObjectComplementOf>
-                <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriTinggi"/>
+                <Class IRI="#BahanKaloriTinggi"/>
             </ObjectComplementOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriTinggi"/>
+        <Class IRI="#BahanKaloriTinggi"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
+            <Class IRI="#Bahan"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
+                <DataProperty IRI="#hasKalori"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -178,12 +182,12 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriRendah"/>
+        <Class IRI="#ProdukKaloriRendah"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Makanan"/>
+            <Class IRI="#Produk"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
+                <DataProperty IRI="#hasKalori"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -194,12 +198,12 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriRendah"/>
+        <Class IRI="#ProdukKaloriRendah"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Minuman"/>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Minuman"/>
+            <Class IRI="#Produk"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
+                <DataProperty IRI="#hasKalori"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -210,50 +214,50 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriRendah"/>
+        <Class IRI="#ProdukKaloriRendah"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Produk"/>
             <ObjectIntersectionOf>
                 <ObjectComplementOf>
                     <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-                        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriTinggi"/>
+                        <ObjectProperty IRI="#hasBahan"/>
+                        <Class IRI="#BahanKaloriTinggi"/>
                     </ObjectSomeValuesFrom>
                 </ObjectComplementOf>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-                    <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#BahanKaloriRendah"/>
+                    <ObjectProperty IRI="#hasBahan"/>
+                    <Class IRI="#BahanKaloriRendah"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriTinggi"/>
+        <Class IRI="#ProdukKaloriTinggi"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Produk"/>
             <ObjectComplementOf>
-                <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriRendah"/>
+                <Class IRI="#ProdukKaloriRendah"/>
             </ObjectComplementOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMahal"/>
+        <Class IRI="#ProdukMahal"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Produk"/>
             <ObjectComplementOf>
-                <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMurah"/>
+                <Class IRI="#ProdukMurah"/>
             </ObjectComplementOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMurah"/>
+        <Class IRI="#ProdukMurah"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Produk"/>
             <ObjectUnionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+                    <Class IRI="#Makanan"/>
                     <DataSomeValuesFrom>
-                        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
+                        <DataProperty IRI="#hasPrice"/>
                         <DatatypeRestriction>
                             <Datatype abbreviatedIRI="xsd:integer"/>
                             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -263,9 +267,9 @@
                     </DataSomeValuesFrom>
                 </ObjectIntersectionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Minuman"/>
+                    <Class IRI="#Minuman"/>
                     <DataSomeValuesFrom>
-                        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
+                        <DataProperty IRI="#hasPrice"/>
                         <DatatypeRestriction>
                             <Datatype abbreviatedIRI="xsd:integer"/>
                             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -278,398 +282,407 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#DomainThings"/>
+        <Class IRI="#Bahan"/>
+        <Class IRI="#DomainThings"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Barat"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <Class IRI="#Jus"/>
+        <Class IRI="#Minuman"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Jus"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Minuman"/>
+        <Class IRI="#Kantin"/>
+        <Class IRI="#DomainThings"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#DomainThings"/>
+        <Class IRI="#KantinBarat"/>
+        <Class IRI="#Kantin"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <Class IRI="#KantinSelatan"/>
+        <Class IRI="#Kantin"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananPenutup"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+        <Class IRI="#KantinTimur"/>
+        <Class IRI="#Kantin"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+        <Class IRI="#KantinUtara"/>
+        <Class IRI="#Kantin"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Minuman"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <Class IRI="#Makanan"/>
+        <Class IRI="#Produk"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#DomainThings"/>
+        <Class IRI="#MakananPenutup"/>
+        <Class IRI="#Makanan"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Selatan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <Class IRI="#MakananUtama"/>
+        <Class IRI="#Makanan"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Snack"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+        <Class IRI="#Minuman"/>
+        <Class IRI="#Produk"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Softdrink"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Minuman"/>
+        <Class IRI="#Produk"/>
+        <Class IRI="#DomainThings"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Timur"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <Class IRI="#Snack"/>
+        <Class IRI="#Makanan"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Utara"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <Class IRI="#Softdrink"/>
+        <Class IRI="#Minuman"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <Class IRI="#Bahan"/>
+        <Class IRI="#Kantin"/>
+        <Class IRI="#Produk"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Snack"/>
+        <Class IRI="#MakananUtama"/>
+        <Class IRI="#Snack"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriRendah"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukKaloriTinggi"/>
+        <Class IRI="#ProdukKaloriRendah"/>
+        <Class IRI="#ProdukKaloriTinggi"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMahal"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#ProdukMurah"/>
+        <Class IRI="#ProdukMahal"/>
+        <Class IRI="#ProdukMurah"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Ayam"/>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Ayam"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Daging"/>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daging"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Action"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Duduk"/>
+        <Class IRI="#Action"/>
+        <NamedIndividual IRI="#Duduk"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Timur"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EastCorner"/>
+        <Class IRI="#KantinTimur"/>
+        <NamedIndividual IRI="#EastCorner"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananPenutup"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EsKrim"/>
+        <Class IRI="#MakananPenutup"/>
+        <NamedIndividual IRI="#EsKrim"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Jus"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusAlpukat"/>
+        <Class IRI="#Jus"/>
+        <NamedIndividual IRI="#JusAlpukat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Jus"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusApel"/>
+        <Class IRI="#Jus"/>
+        <NamedIndividual IRI="#JusApel"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Jus"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusMangga"/>
+        <Class IRI="#Jus"/>
+        <NamedIndividual IRI="#JusMangga"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Selatan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KKP"/>
+        <Class IRI="#KantinSelatan"/>
+        <NamedIndividual IRI="#KKP"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Barat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinGKUBarat"/>
+        <Class IRI="#KantinBarat"/>
+        <NamedIndividual IRI="#KantinGKUBarat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Selatan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSalman"/>
+        <Class IRI="#KantinSelatan"/>
+        <NamedIndividual IRI="#KantinSalman"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Utara"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSaraga"/>
+        <Class IRI="#KantinUtara"/>
+        <NamedIndividual IRI="#KantinSaraga"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Action"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Membeli"/>
+        <Class IRI="#Action"/>
+        <NamedIndividual IRI="#Membeli"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiAyam"/>
+        <Class IRI="#MakananUtama"/>
+        <NamedIndividual IRI="#NasiAyam"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiGoreng"/>
+        <Class IRI="#MakananUtama"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Pizza"/>
+        <Class IRI="#MakananUtama"/>
+        <NamedIndividual IRI="#Pizza"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Seledri"/>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Seledri"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Snack"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#SeledriGoreng"/>
+        <Class IRI="#Snack"/>
+        <NamedIndividual IRI="#SeledriGoreng"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#MakananUtama"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Steak"/>
+        <Class IRI="#MakananUtama"/>
+        <NamedIndividual IRI="#Steak"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EastCorner"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiGoreng"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#EastCorner"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EastCorner"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Steak"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#EastCorner"/>
+        <NamedIndividual IRI="#Steak"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EsKrim"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EastCorner"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <NamedIndividual IRI="#EsKrim"/>
+        <NamedIndividual IRI="#EastCorner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusAlpukat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinGKUBarat"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <NamedIndividual IRI="#JusAlpukat"/>
+        <NamedIndividual IRI="#KantinGKUBarat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusApel"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSaraga"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <NamedIndividual IRI="#JusApel"/>
+        <NamedIndividual IRI="#KantinSaraga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusMangga"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSalman"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <NamedIndividual IRI="#JusMangga"/>
+        <NamedIndividual IRI="#KantinSalman"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KKP"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiAyam"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#KKP"/>
+        <NamedIndividual IRI="#NasiAyam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinGKUBarat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiGoreng"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#KantinGKUBarat"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSalman"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiAyam"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#KantinSalman"/>
+        <NamedIndividual IRI="#NasiAyam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSaraga"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#SeledriGoreng"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#KantinSaraga"/>
+        <NamedIndividual IRI="#SeledriGoreng"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#KantinSaraga"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Steak"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <NamedIndividual IRI="#KantinSaraga"/>
+        <NamedIndividual IRI="#Steak"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiAyam"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Ayam"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <NamedIndividual IRI="#NasiAyam"/>
+        <NamedIndividual IRI="#Ayam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiGoreng"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Daging"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
+        <NamedIndividual IRI="#Daging"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Pizza"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EastCorner"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <NamedIndividual IRI="#Pizza"/>
+        <NamedIndividual IRI="#EastCorner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#SeledriGoreng"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Seledri"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <NamedIndividual IRI="#SeledriGoreng"/>
+        <NamedIndividual IRI="#Seledri"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Steak"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Daging"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <NamedIndividual IRI="#Steak"/>
+        <NamedIndividual IRI="#Daging"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Ayam"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#Ayam"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Daging"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#Daging"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EsKrim"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#EsKrim"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#EsKrim"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#EsKrim"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusAlpukat"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#JusAlpukat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">800</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusAlpukat"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#JusAlpukat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusApel"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#JusApel"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusApel"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#JusApel"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusMangga"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#JusMangga"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#JusMangga"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#JusMangga"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiAyam"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#NasiAyam"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#NasiGoreng"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#NasiGoreng"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Pizza"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#Pizza"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Pizza"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Pizza"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Seledri"/>
+        <DataProperty IRI="#hasKalori"/>
+        <NamedIndividual IRI="#Seledri"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#SeledriGoreng"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#SeledriGoreng"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Steak"/>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Steak"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70000</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
+        <ObjectProperty IRI="#isDijual"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
+        <ObjectProperty IRI="#isMenjual"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isBahan"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <ObjectProperty IRI="#isBahan"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <ObjectProperty IRI="#isMenjual"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
+        <ObjectProperty IRI="#hasBahan"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isBahan"/>
+        <ObjectProperty IRI="#isBahan"/>
     </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <Class IRI="#Makanan"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isBahan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
+        <ObjectProperty IRI="#isBahan"/>
+        <Class IRI="#Bahan"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <Class IRI="#Produk"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <Class IRI="#Kantin"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasBahan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
+        <ObjectProperty IRI="#hasBahan"/>
+        <Class IRI="#Bahan"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isBahan"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Makanan"/>
+        <ObjectProperty IRI="#isBahan"/>
+        <Class IRI="#Makanan"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isDijual"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Kantin"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <Class IRI="#Kantin"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#isMenjual"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <ObjectProperty IRI="#isMenjual"/>
+        <Class IRI="#Produk"/>
     </ObjectPropertyRange>
-    <FunctionalDataProperty>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-    </FunctionalDataProperty>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasBahan"/>
+        <ObjectProperty IRI="#isBahan"/>
+        <ObjectProperty IRI="#isDijual"/>
+        <ObjectProperty IRI="#isMenjual"/>
+    </DisjointObjectProperties>
     <DataPropertyDomain>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
+        <DataProperty IRI="#hasKalori"/>
         <ObjectUnionOf>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Bahan"/>
-            <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+            <Class IRI="#Bahan"/>
+            <Class IRI="#Produk"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
-        <Class IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#Produk"/>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Produk"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasKalori"/>
+        <DataProperty IRI="#hasKalori"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://www.semanticweb.org/aliakbar/ontologies/2017/9/untitled-ontology-9#hasPrice"/>
+        <DataProperty IRI="#hasNama"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#hasKalori"/>
+        <DataProperty IRI="#hasNama"/>
+        <DataProperty IRI="#hasPrice"/>
+    </DisjointDataProperties>
 </Ontology>
 
 
